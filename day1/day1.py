@@ -1,8 +1,8 @@
 def calculate_fuel_1(mass):
-    return int(int(mass) / 3) - 2
+    return int(mass / 3) - 2
 
 def calculate_fuel_2(mass):
-    mass = int(int(mass) / 3) - 2
+    mass = int(mass / 3) - 2
     return 0 if mass < 1 else mass + calculate_fuel_2(mass)
 
 if __name__ == "__main__":
