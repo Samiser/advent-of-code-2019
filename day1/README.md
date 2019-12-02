@@ -39,4 +39,6 @@ def calculate_fuel_2(mass):
 
 Essentially, while the mass still needs fuel, run the function
 on the mass again. This recursively gets the required fuel and
-fulfills the requirements in a very small amount of code.
+fulfills the requirements in a very small amount of code. To
+shorten the code a wee bit I replaced the long form conditional statement
+with a conditional expression, essentially a python ternary operator.
