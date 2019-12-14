@@ -10,9 +10,9 @@ class wire:
     
         x = y = 0
     
-        for segment in path:
-            dx,dy = step[segment[0]]
-            length = int(segment[1:])
+        for seg in path:
+            dx,dy = step[seg[0]]
+            length = int(seg[1:])
     
             for n in range(length):
                 x += dx

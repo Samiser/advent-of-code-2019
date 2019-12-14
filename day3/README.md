@@ -1,4 +1,4 @@
-# Day 2: 1202 Program Alarm
+# Day 3: Crossed Wires
 
 Whew this problem is a lot more complicated than the last two...
 
@@ -6,7 +6,7 @@ First, we should build a function that returns a generator for the
 sequence of coordinates of the wire. This will make comparing the
 wire paths later a lot easier.
 
-We'll start by build a dictionary of instructions:
+We'll start by building a dictionary of instructions:
 
 ```python
 step = {'U':(0,1),
@@ -25,9 +25,9 @@ Now we can loop through the instructions and use the dictionary to
 change the x and y values and yield the resulting sequence of coordinates:
 
 ```python
-for segment in path:
-    dx,dy = step[segment[0]]
-    length = int(segment[1:])
+for seg in path:
+    dx,dy = step[seg[0]]
+    length = int(seg[1:])
 
     for n in range(length):
         x += dx
